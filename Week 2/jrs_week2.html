@@ -64,21 +64,30 @@
 </div>
 
 <script>
-		var isPlaying = true;
-		
-		var dualButton = document.getElementById("button");
-		dualButton.addEventListener('click', function(){
+
+// transition attempt
+	$(function() { 
+    	$("#button").ready (function() { 
+        	$(".yellow").toggleClass("green"); 
+	    }); 
+	}); 
+
+//button function
+	var isPlaying = true;
+	
+	var dualButton = document.getElementById("button");
+	dualButton.addEventListener('click', function(){
 
 
-			if(isPlaying) {
-			document.getElementById("vid").pause();
-			isPlaying = false;	
-			document.getElementById("button").innerHTML = "Play Video";
-			} else {
-			document.getElementById("vid").play();
-			isPlaying = true;
-			document.getElementById("button").innerHTML = "Pause Video";
-		}});
+		if(isPlaying) {
+		document.getElementById("vid").pause();
+		isPlaying = false;	
+		document.getElementById("button").innerHTML = "Play Video";
+		} else {
+		document.getElementById("vid").play();
+		isPlaying = true;
+		document.getElementById("button").innerHTML = "Pause Video";
+	}});
 
 	</script>
 
