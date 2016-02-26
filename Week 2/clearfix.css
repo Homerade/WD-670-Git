@@ -1,0 +1,72 @@
+#one{
+	float:left;
+	border: 2px solid black;
+	padding: 10px;
+	margin: 6px;
+	width: 120px;
+	height: 40px;
+	border-color: red;
+	text-align: center;
+}
+
+#two{
+	float:left;
+	border: 2px solid black;
+	padding:10px;
+	margin: 6px;
+	width: 200px;
+	height: 20px;
+	text-align: center;
+	/*overflow: auto;*/
+}
+
+/*#clearfix{
+	overflow: auto;
+	border: 1px solid green;
+}*/
+
+/*
+#clearfix:after{
+	content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}*/
+
+#three{
+	clear:both;
+	border: 2px solid black;
+	padding: 10px;
+	margin: 6px;
+	width: 20px;
+	height: 20px;
+	text-align: center;
+}
+
+ #four{
+ 	border: 2px solid black;
+	padding: 10px;
+	margin: 6px;
+	width: 20px;
+	height: 20px;
+	text-align: center;
+ }
+
+ #five{
+ 	border: 2px solid black;
+	padding: 10px;
+	margin: 6px;
+	width: 20px;
+	height: 20px;
+	text-align: center;
+ }
+
+ #six{
+ 	border: 2px solid black;
+	padding: 10px;
+	margin: 6px;
+	width: 20px;
+	height: 20px;
+	text-align: center;
+ }
