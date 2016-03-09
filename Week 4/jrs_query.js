@@ -1,6 +1,6 @@
 $(document).ready(function(){
-	$('footer.ftMenu').hover(function(){   //using: 'tag.class' unlike example: '.class tag' //.hover not blue(?)
-			
+	$('.ftMenu').click(function(){   //using: 'tag.class' unlike example: '.class tag' //.hover not blue(?)
+		background-color: #00CC99;	
 
 	})
 })
