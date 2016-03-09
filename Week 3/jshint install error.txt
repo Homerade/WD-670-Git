@@ -1,0 +1,32 @@
+Last login: Mon Feb 29 23:28:05 on ttys000
+stephanies-MacBook-Pro:~ steph$ npm install -g jshint
+npm ERR! tar.unpack untar error /Users/steph/.npm/jshint/2.9.1/package.tgz
+npm ERR! Darwin 15.2.0
+npm ERR! argv "/usr/local/bin/node" "/usr/local/bin/npm" "install" "-g" "jshint"
+npm ERR! node v4.3.1
+npm ERR! npm  v2.14.12
+npm ERR! path /usr/local/lib/node_modules/jshint
+npm ERR! code EACCES
+npm ERR! errno -13
+npm ERR! syscall mkdir
+
+npm ERR! Error: EACCES: permission denied, mkdir '/usr/local/lib/node_modules/jshint'
+npm ERR!     at Error (native)
+npm ERR!  { [Error: EACCES: permission denied, mkdir '/usr/local/lib/node_modules/jshint']
+npm ERR!   errno: -13,
+npm ERR!   code: 'EACCES',
+npm ERR!   syscall: 'mkdir',
+npm ERR!   path: '/usr/local/lib/node_modules/jshint',
+npm ERR!   fstream_type: 'Directory',
+npm ERR!   fstream_path: '/usr/local/lib/node_modules/jshint',
+npm ERR!   fstream_class: 'DirWriter',
+npm ERR!   fstream_stack: 
+npm ERR!    [ '/usr/local/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:35:25',
+npm ERR!      '/usr/local/lib/node_modules/npm/node_modules/mkdirp/index.js:47:53',
+npm ERR!      'FSReqWrap.oncomplete (fs.js:82:15)' ] }
+npm ERR! 
+npm ERR! Please try running this command again as root/Administrator.
+
+npm ERR! Please include the following file with any support request:
+npm ERR!     /Users/steph/npm-debug.log
+stephanies-MacBook-Pro:~ steph$ 

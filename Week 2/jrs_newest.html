@@ -1,0 +1,108 @@
+<!DOCTYPE HTML>
+<html>
+
+ <head>
+	<title>JRS Brides</title>
+	<link rel="stylesheet" type="text/css" href="jrs_newest.css">
+	<link href='https://fonts.googleapis.com/css?family=Great+Vibes|Herr+Von+Muellerhoff|Alex+Brush|Allura|Italianno|Mr+De+Haviland|Clicker+Script|Calligraffitti|Give+You+Glory|Montez' rel='stylesheet' type='text/css'>
+
+	<!-- //penna font//
+	<script src="https://use.typekit.net/wlx6hzo.js"></script>
+<script>try{Typekit.load({ async: true });}catch(e){}</script>
+	-->
+
+ </head>
+
+ <body>
+ <div id="wrapper">
+ 	
+ 	<header>
+		<button id="button">Pause Video</button>
+		<h1>J R S Brides</h1>
+		<p id="est">Est. 2010</p>
+			
+		<div id="uLineJ"></div>
+		<div id="uLine1"></div>
+		<div id="uLineR"></div>
+		<div id="uLine2"></div>
+		<div id="uLineS"></div>
+	</header>
+
+	<figure id="topImage">
+		<img src="img/stockimg1.jpeg" width=500/>
+		<figcaption>Image courtesy of Adobe Stock</figcaption>
+	</figure>
+		
+	<figure><img id="quote" src="img/happily.jpg" width=300/></figure>
+
+	<video id="vid" autoplay>	
+		<source src="videos/jrs_vid.ogv" type="video/ogv">
+		<source src="videos/jrs_vid.mp4" type="video/mp4">	
+		<source src="videos/jrs_vid.webm" type="video/webm">				
+	</video>
+
+
+	<nav id="menu">
+		<ul>
+			<li><a href="gallery.html">Gallery</a></li>
+			<li><a href="servsRates.html">Services and Rates</a></li>
+			<li><a href="appts.html">Set up an Appointment</a></li>
+			<li><a href="contact.html">Contact</a></li>
+		</ul>
+	</nav>
+
+	<p id="bgLettering">JRS</p>
+
+	<footer>
+		<p class="ftMenu" id="styles">Styles</p>
+		<p id="copy">&copy Vizzi 2016</p>
+		<p class="ftMenu" id="mailing">Join Our Mailing List</p>
+		<p class="ftMenu" id="inspire">Inspiration</p>
+	</footer>
+
+	
+</div>
+
+<script>
+
+// transition attempt
+	$(function() { 
+    	$("#button").ready (function() { 
+        	$(".yellow").toggleClass("green"); 
+	    }); 
+	}); 
+
+//button function
+	var isPlaying = true;
+	
+	var dualButton = document.getElementById("button");
+	dualButton.addEventListener('click', function(){
+
+
+		if(isPlaying) {
+		document.getElementById("vid").pause();
+		isPlaying = false;	
+		document.getElementById("button").innerHTML = "Play Video";
+		} else {
+		document.getElementById("vid").play();
+		isPlaying = true;
+		document.getElementById("button").innerHTML = "Pause Video";
+	}});
+
+	</script>
+
+	<!-- //penna font-Advanced//
+	<script>
+  (function(d) {
+    var config = {
+      kitId: 'wlx6hzo',
+      scriptTimeout: 3000,
+      async: true
+    },
+    h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+  })(document);
+</script>
+-->
+ </body>
+
+</html>
