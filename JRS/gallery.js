@@ -4,25 +4,25 @@ document.addEventListener("DOMContentLoaded", function(event) {
 	img1.src = img/80450_fleurdelis_lg.gif;
 
 	var img2 = document.createElement("img");
-	img1.src = img/angels-1493731.jpg
+	img2.src = img/angels-1493731.jpg
 
 	var img3 = document.createElement("img");
-	img1.src = img/black laurel wreath.jpg
+	img3.src = img/black laurel wreath.jpg
 	
 	var img4 = document.createElement("img");
-	img1.src = img/Fleur_de_Lis_Logo__00608.1443214471.1280.1280.jpg
+	img4.src = img/Fleur_de_Lis_Logo__00608.1443214471.1280.1280.jpg
 	
 	var img5 = document.createElement("img");
-	img1.src = img/fleur-de-lis-001.jpg
+	img5.src = img/fleur-de-lis-001.jpg
 	
 	var img6 = document.createElement("img");
-	img1.src = img/fleur1.jpg
+	img6.src = img/fleur1.jpg
 	
 	var img7 = document.createElement("img");
-	img1.src = img/fleurandlaurel.jpeg
+	img7.src = img/fleurandlaurel.jpeg
 	
 	var img8 = document.createElement("img");
-	img1.src = img/vgosn_vintage_wreath_clip_art_image.jpg
+	img8.src = img/vgosn_vintage_wreath_clip_art_image.jpg
 
 
 	var imgGrid = document.querySelector(".photoBox");
