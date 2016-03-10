@@ -3,21 +3,21 @@ document.addEventListener("DOMContentLoaded", function(event) {
 	var photoBox = document.querySelector('.photoBox');
 
 	var files = [
-		"img/80450_fleurdelis_lg.gif"
-		"img/angels-1493731.jpg"
-		"img/black laurel wreath.jpg"
-		"img/Fleur_de_Lis_Logo__00608.1443214471.1280.1280.jpg"
-		"img/fleur-de-lis-001.jpg"
-		"img/fleur1.jpg"
-		"img/fleurandlaurel.jpeg"
-		"img/vgosn_vintage_wreath_clip_art_image.jpg"
+		"img/80450_fleurdelis_lg.gif",
+		"img/angels-1493731.jpg",
+		"img/black laurel wreath.jpg",
+		"img/Fleur_de_Lis_Logo__00608.1443214471.1280.1280.jpg",
+		"img/fleur-de-lis-001.jpg",
+		"img/fleur1.jpg",
+		"img/fleurandlaurel.jpeg",
+		"img/vgosn_vintage_wreath_clip_art_image.jpg",
 	];
 
 	for (var i=0; files.length; i++){
 		var images = document.createElement("img");
 		images.className = "images";
-		images.src = files[i]
-		photoBox.appendChild(images)
+		images.src = files[i];
+		photoBox.appendChild(images);
 	}
 	
 
