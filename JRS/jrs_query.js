@@ -15,18 +15,29 @@
 		document.getElementById("button").innerHTML = "Pause Video";
 	}});
 
-//footer interactivity
+
+//header background-color change
 $(document).ready(function(){
-	//hover over and it turns green
-	$('#styles').mouseover(function(){   
-		$(this).css("background-color", "#00CC99");	
-	})
-	//click on it and it flashes crimson
-	.mousedown(function(){
-		$(this).css("background-color", "crimson")
-	})
-	//flashes back to green after click is done
-	.mouseup(function(){
-		$(this).css("background-color", "#00CC99")
+	
+	$(window).scroll(function(){
+		$('#header').css('background-color', 'transparent');
+
 	})
 })
+
+
+// //footer interactivity
+// $(document).ready(function(){
+// 	//hover over and it turns green
+// 	$('#styles').mouseover(function(){   
+// 		$(this).css("background-color", "#00CC99");	
+// 	})
+// 	//click on it and it flashes crimson
+// 	.mousedown(function(){
+// 		$(this).css("background-color", "crimson")
+// 	})
+// 	//flashes back to green after click is done
+// 	.mouseup(function(){
+// 		$(this).css("background-color", "#00CC99")
+// 	})
+// })

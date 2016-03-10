@@ -5,19 +5,14 @@
 	<title>JRS Brides</title>
 	<link rel="stylesheet" type="text/css" href="jrs_newest.css">
 	<link href='https://fonts.googleapis.com/css?family=Great+Vibes|Herr+Von+Muellerhoff|Alex+Brush|Allura|Italianno|Mr+De+Haviland|Clicker+Script|Calligraffitti|Give+You+Glory|Montez' rel='stylesheet' type='text/css'>
-
 	<script src="jrs_query.js"></script>
-	<!-- //penna font//
-	<script src="https://use.typekit.net/wlx6hzo.js"></script>
-<script>try{Typekit.load({ async: true });}catch(e){}</script>
-	-->
 
  </head>
 
  <body>
  <div id="wrapper">
  	
- 	<header>
+ 	<header id="header">
 		<button id="button">Pause Video</button>
 		<h1>J R S Brides</h1>
 		<p id="est">Est. 2010</p>
@@ -82,19 +77,18 @@
 		document.getElementById("button").innerHTML = "Pause Video";
 	}});
 
+
+//header background-color change
+	$(document).ready(function(){
+	
+	$(window).scroll(function(){
+		$('#header').css('background-color', 'transparent');
+
+	})
+})
+
 </script>	
-	<!-- //penna font-Advanced//
-	<script>
-  (function(d) {
-    var config = {
-      kitId: 'wlx6hzo',
-      scriptTimeout: 3000,
-      async: true
-    },
-    h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
-  })(document);
-</script>
--->
+
  </body>
 
 </html>
