@@ -102,7 +102,20 @@ p#est{
 	border-bottom: 2px solid crimson;
 	border-left: 2px solid crimson;
 }
-.photoBox{
+
+.container{
+	clear: both;
+	margin-top: 200px;
+	width: 200px;
+	float:left;
+	list-style-type: none;
+}
+
+li{
+	list-style-type: none;
+}
+
+/*.photoBox{
 	clear: both;
 	position: relative;
 }
@@ -114,4 +127,4 @@ p#est{
 
 .imgBlock li{
 	float:left;
-}
+}*/
