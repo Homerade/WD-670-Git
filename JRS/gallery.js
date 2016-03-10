@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function(event) {
 
-	
+	var photoBox = document.querySelector('.photoBox');
 
 	var files = [
 		"img/80450_fleurdelis_lg.gif"
@@ -17,6 +17,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 		var images = document.createElement("img");
 		images.className = "images";
 		images.src = files[i]
+		photoBox.appendChild(images)
 	}
 	
 
