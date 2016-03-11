@@ -10,7 +10,7 @@ header{
 	margin: 0 auto;
 	padding: 0;
 	background: white;
-	position: fixed;
+	/*position: fixed;*/
 	z-index: 2;
 
 }
@@ -103,9 +103,8 @@ p#est{
 	border-left: 2px solid crimson;
 }
 
-.container{
-	clear: both;
-	margin-top: 200px;
+.images{
+	margin-top: 15px;
 	width: 200px;
 	float:left;
 	list-style-type: none;

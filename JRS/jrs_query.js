@@ -1,3 +1,6 @@
+$(document).ready(function(){
+
+
 //button function
 	var isPlaying = true;
 	
@@ -17,12 +20,30 @@
 
 
 //header background-color change
-$(document).ready(function(){
-	
 	$(window).scroll(function(){
 		$('#header').css('background-color', 'transparent');
 
-	})
+	});
+
+//datepicker for Set up an Appt
+
+	$(function(){
+		$("#setAppt").datepicker();
+	});
+
+//second attempt	
+
+	// 	$("#setAppt").click(function(){
+	// 	$(this).datepicker();
+	// });	
+
+// third attempt
+
+	//var calendar = document.querySelector("#setAppt");
+
+	// calendar.click(function(){
+	// 	$("#setAppt").datepicker();
+	// });
 })
 
 

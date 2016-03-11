@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 		"img/vgosn_vintage_wreath_clip_art_image.jpg",
 	];
 
-	for (var i=0; files.length; i++){
+	for (var i=0; i < files.length; i++){
 		var images = document.createElement("img");
 		images.className = "images";
 		images.src = files[i];

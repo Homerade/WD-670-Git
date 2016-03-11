@@ -10,7 +10,7 @@ header{
 	margin: 0 auto;
 	padding: 0;
 	background: white;
-	mix-blend-mode: lighten;
+	mix-blend-mode: multiply;
 	position: fixed;
 	z-index: 2;
 
@@ -34,6 +34,7 @@ h1{
 }
 
 #button{
+	/*mix-blend-mode: normal;*/
 	float:right;
 	margin-right: 20px;
 	margin-top: -10px;
@@ -147,6 +148,12 @@ li{
 a:link{
 	color: #00CC99;
 	text-decoration: none; 
+	border-bottom: 4px double;
+}
+
+#setAppt{
+	color: #00CC99;
+	text-decoration: none;
 	border-bottom: 4px double;
 }
 
