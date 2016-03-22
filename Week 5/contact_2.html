@@ -3,6 +3,7 @@
   <head>
     <title>Simple Map</title>
     <link rel="stylesheet" type="text/css" href="contact.css">
+    <link href='https://fonts.googleapis.com/css?family=Great+Vibes|Herr+Von+Muellerhoff|Alex+Brush|Allura|Italianno|Mr+De+Haviland|Clicker+Script|Calligraffitti|Give+You+Glory|Montez' rel='stylesheet' type='text/css'>
     <meta name="viewport" content="initial-scale=1.0">
     <meta charset="utf-8">
     <style>
@@ -17,23 +18,30 @@
     </style>
   </head>
   <body>
+
   	<header>
-		<h1>J R S Brides</h1>
-		<p id="est">Est. 2010</p>
-			
-		<div id="uLineJ"></div>
-		<div id="uLine1"></div>
-		<div id="uLineR"></div>
-		<div id="uLine2"></div>
-		<div id="uLineS"></div>
-	</header>
-    <div id="map"></div>
+  		<h1>J R S Brides</h1>
+  		<p id="est">Est. 2010</p>
+  			
+  		<div id="uLineJ"></div>
+  		<div id="uLine1"></div>
+  		<div id="uLineR"></div>
+  		<div id="uLine2"></div>
+  		<div id="uLineS"></div>
+    </header>
+
+    <div id="info">
+      <p id="findUs">Come find us!</p>
+    </div>
+
+    <footer id="map"></footer>
+
     <script>
       var map;
       function initMap() {
         map = new google.maps.Map(document.getElementById('map'), {
-          center: {lat: -34.397, lng: 150.644},
-          zoom: 8
+          center: {lat: 38.304159, lng: -77.458048},
+          zoom: 12
         });
       }
     </script>
