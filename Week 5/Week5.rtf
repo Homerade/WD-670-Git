@@ -1,0 +1,96 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1404\cocoasubrtf340
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fnil\fcharset0 HelveticaNeue;\f2\fswiss\fcharset0 ArialMT;
+}
+{\colortbl;\red255\green255\blue255;\red35\green169\blue15;\red0\green68\blue254;\red0\green0\blue0;
+\red32\green34\blue38;\red255\green255\blue255;\red16\green133\blue255;\red83\green83\blue83;\red32\green34\blue38;
+}
+{\*\listtable{\list\listtemplateid1\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{none\}}{\leveltext\leveltemplateid1\'00;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid1}}
+{\*\listoverridetable{\listoverride\listid1\listoverridecount0\ls1}}
+\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 Week 6\
+\
+\cf2 How would I go about getting flowers to unfurl? \
+Why didn\'92t my calendar work?\
+How do AJAX and JSON work together?\
+What is XML?\
+\
+On your example code:\
+do you have to do a window load function or can you do a doc ready function?\
+is \'93response\'94 a jQuery function or something you\'92ve made up?\
+how come you don\'92t have to pre-call up the #parsed_json element earlier in the js before appending?\
+	-why does that have to come at the end?\cf0 \
+\
+Other app logins are APIs. \cf3 Explain that?\
+\
+\cf4 HW: add Baltimore Brew/Alternet site API to my own. \
+\
+This is so cool! \cf3 How do you do something like this?\
+\cf4 \
+	
+\f1\fs22 \cf5 \cb6 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec5 An RSS feed of all of my WebWorkerDaily posts\cb1 \
+\pard\tx220\tx720\pardeftab720\li720\fi-720\sl540\partightenfactor0
+\ls1\ilvl0\cf5 \cb6 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 		\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec5 takes each link and runs it through the {\field{\*\fldinst{HYPERLINK "http://www.backtype.com/developers"}}{\fldrslt \cf7 \strokec7 BackType API}} to see who has posted the link to Twitter\cb1 \
+\ls1\ilvl0\cb6 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 		\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec5 then uses the Twitter API to see how many followers each person who tweeted the link has\cb1 \
+\ls1\ilvl0\cb6 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 		\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec5 and finally it formats all of this information into a new RSS feed in the form of \'93username (num of followers): Tweet text\'94 that I can view in my RSS reader
+\fs36 \cb1 \
+\ls1\ilvl0\kerning1\expnd0\expndtw0 \outl0\strokewidth0 		\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec5 \
+\pard\tx720\pardeftab720\partightenfactor0
+
+\fs24 \cf5 JQUERY TUTORIAL\
+\cf3 When is this used? Why are we learning it in relation to APIs, because it works the same way or bc they\'92re used together?\cf5 \
+\
+get() post()\
+ - send HTTP request and return info\
+ - used often with forms\
+ - both \cf4 static methods:\
+	
+\f2\fs22 \cf3 \cb6 \strokec8 They are both static methods, which means that instead of instantiating a jQuery object and then working with that, we call get() or post() directly on the jQuery class, either by writing jQuery.get() or by using the shortcut character like this: $.get()
+\f1\fs24 \cb1 \strokec5 \
+\cf5 \
+\cf4 Page 1\cf3  - I don\'92t understand the parameters of the function in the examples. They haven\'92t been defined, is that supposed to happen later?  What\'92s a callback function? What\'92s a textual status?\
+\
+\cf4 The Ready Event\
+ \cf3 - Should I be using \cf4 $(function()\cf3  instead of \cf4 $(document).ready(DocumentReady); \cf3 ???\
+\
+\cf4 Using Attributes\
+ - call an attribute using square brackets [ ] inside the quotations. Where id takes # $ ( \'91 #id \'91 ), $ ( \'91 [ title ] \'91 )\
+\
+ - use the \'93!=\'93 to make changes to all other elements except the one mentioned\
+\
+ -  ^=  means \'93starts with\'94  e.g. $( input [ name ^= \'92txt\'92 ] \'91 ).css (\'85.)\
+\
+ -  $= means \'93ends with\'94  \cf0 \outl0\strokewidth0 e.g. $( input [ name $= \'92txt\'92 ] \'91 ).css (\'85.)\cf4 \outl0\strokewidth0 \strokec5 \
+\
+ - *= means \'93contains\'94  \cf0 \outl0\strokewidth0 e.g. $( input [ name *= \'92txt\'92 ] \'91 ).css (\'85.)\
+\
+ 	\cf3 - is input necessary?\
+\
+\cf4 PARENT/CHILD SELECTORS\
+\
+ - finding direct descendant children:  $( \'93div > a\'94 )\cf3  \
+ \cf4 - to find all links in a div element just have a space bw them:  $( \'93div a\'94 )\
+\
+EFFECTS\
+\
+.fadeIn (\'93fast\'94), (\'93slow\'94) or (\'93number in milliseconds\'94)\
+\
+.fadeOut\
+\outl0\strokewidth0 \strokec5 \
+.fadeToggle\
+\
+.slideDown / .slideUp / .slideToggle\
+\
+\
+\cf3 \
+\cf5 \
+\pard\tx720\pardeftab720\sl480\slmult1\partightenfactor0
+
+\fs36 \cf5 \
+}

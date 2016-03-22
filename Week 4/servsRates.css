@@ -1,0 +1,35 @@
+#servsWrap{
+	width: 300px;
+	float: left;
+}
+
+.script{
+	font-family: 'Clicker Script', cursive;
+	font-size: 30px;
+	color: #00CC99;
+	padding: 15px;
+}
+
+li{
+	list-style-type: none;
+	border:2px solid white;
+	padding: 1em;
+	font-family: 'Clicker Script', cursive;
+	font-size: 35px;
+	background-color: crimson;
+	color: white;
+	font-weight: bold;
+}
+
+#ratesWrap{
+	border: 1px solid black;
+	padding: 2em;
+	width: 200px;
+	float: left;
+}
+
+p{
+	font-family: 'Clicker Script', cursive;
+	font-size: 23px;
+}
+

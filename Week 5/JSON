@@ -1,0 +1,59 @@
+{
+	"state": "Maryland",
+
+	"founded": 1634,
+
+	"capital": "Annapolis",
+
+	"NumberOfCounties": 23,
+
+	"StateSymbols": {
+		"StateBird": "Baltimore Oriole",
+		"StateFlower": "black-eyed susan",
+		"StateTreeSpecies": "White Oak",
+		"StateTree": "Wye Oak",
+		"StateSport": "jousting",
+		"StateDinosaur": "Astrodon Johnstoni",
+		"StateFish": "Rockfish (Striped Bass)",
+	},	
+
+	"population": "6 million",
+
+	"PopulationBreakdown": {
+		"white": "60%",
+		"black": "30%",
+		"asian": "6%",
+		"hispanic": "9%",
+	},
+
+	"governor": "Larry Hogan",
+
+	"senators":	[
+		"Barbara Mikulski",
+		"Benjamin Cardin",
+	],
+
+	"congressmen": {
+
+		"republican": [
+			"Andrew Harris",
+		],
+
+		"democrat": [
+			"Dutch Ruppersberger",
+			"John Sarbanes",
+			"Donna Edwards",
+			"Steny Hoyer",
+			"John Delaney",
+			"Elijah Cummings",
+			"Chris Van Hollen",
+		],
+	},
+
+	"delegates": {
+		"democratic": 105,
+		"republican": 38,
+	}
+
+
+}
