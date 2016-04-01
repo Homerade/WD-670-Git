@@ -14,7 +14,7 @@
 		"StateTree": "Wye Oak",
 		"StateSport": "jousting",
 		"StateDinosaur": "Astrodon Johnstoni",
-		"StateFish": "Rockfish (Striped Bass)",
+		"StateFish": "Rockfish (Striped Bass)"
 	},	
 
 	"population": "6 million",
@@ -23,20 +23,20 @@
 		"white": "60%",
 		"black": "30%",
 		"asian": "6%",
-		"hispanic": "9%",
+		"hispanic": "9%"
 	},
 
 	"governor": "Larry Hogan",
 
 	"senators":	[
 		"Barbara Mikulski",
-		"Benjamin Cardin",
+		"Benjamin Cardin"
 	],
 
 	"congressmen": {
 
 		"republican": [
-			"Andrew Harris",
+			"Andrew Harris"
 		],
 
 		"democrat": [
@@ -46,13 +46,13 @@
 			"Steny Hoyer",
 			"John Delaney",
 			"Elijah Cummings",
-			"Chris Van Hollen",
-		],
+			"Chris Van Hollen"
+		]
 	},
 
 	"delegates": {
-		"democratic": 105,
-		"republican": 38,
+		"democrat": 105,
+		"republican": 38
 	}
 
 
