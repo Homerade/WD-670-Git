@@ -14,8 +14,8 @@ app.get('/', function(req,res){
 	app.get('/medical', function(req,res){
 		var text = '<h1>Medical documents</h1>';
 		text += '<h3>Here you can store all pertinent medical documents and information</h3>';
-		text += '<a href="/medical/testresults">test results</a>';
-		text += '<a href="/medical/drnotes">doctor&#146s notes</a>';
+		text += '</br><a href="/medical/testresults">test results</a>';
+		text += '</br><a href="/medical/drnotes">doctor&#146s notes</a>';
 		res.send(text);
 	});
 
