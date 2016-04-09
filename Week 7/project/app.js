@@ -13,10 +13,10 @@ app.use(express.static('public'));
 // --- routes --- //
 app.get("/",function(req,res){
 	var data = {
-		nav1: "Contact",
-		nav2: "Gallery",
-		nav3: "Appointments",
-		nav4: "Services & Rates"
+		nav1: "Appointments",
+		nav2: "Services & Rates",
+		nav3: "Gallery",
+		nav4: "Contact"
 	};
 
 	res.render("homepage", data);
@@ -84,6 +84,6 @@ app.get("/",function(req,res){
 
 
 // start the server
-	app.listen(3000, function(){
-		console.log('Express on http://localhost:3000; press Ctrl-C to terminate.');
+	app.listen(5555, function(){
+		console.log('Express on http://localhost:5555; press Ctrl-C to terminate.');
 	});	

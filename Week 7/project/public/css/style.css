@@ -46,43 +46,48 @@ hr{
 	margin-left: auto;
 	margin-right: auto;
 	margin-top: 20px;
-	opacity: 0.1;
+	opacity: 0.05;
 	position: relative
 	z-index: 1;
 }
 
-.title{
-	font-size: 40px;
-}
-
-.cat1{
-	font-size: 25px;
-}
-
-p {
-	font-size: 20px;
-}
-
-#HPage{
-	clear: both;
+.page{
 	margin: 20px;
+	margin-top: -800px;
+	text-align: left;
 	position: absolute;
 	z-index: 99;
 }
 
-#HPage a{
+.page a{
 	text-decoration: none;
+}
+
+.title{
+	font-size: 40px;
+	font-family: 'penna';
+}
+
+.cat1{
+	font-size: 30px;
+	font-family: 'penna';
+}
+
+p {
+	font-size: 15px;
+	font-family: 'work sans';
+	font-weight: 200;
 }	
+
+a{
+	color: black;
+}
 
 a:visited{
 	color: black;
 }
 
-#servsRatesPage{
-	margin-left: 20px;
-	margin-top: -800px;
-}
-
-#SRcats{
-	margin: 0 auto;
+.cats{
+	width: 1200px;
+	text-align: center;	
 }
