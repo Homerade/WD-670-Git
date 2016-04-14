@@ -1,0 +1,185 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'handlebars',
+1 verbose cli   '-g' ]
+2 info using npm@2.14.12
+3 info using node@v4.3.1
+4 verbose install initial load of /usr/local/lib/package.json
+5 verbose readDependencies loading dependencies from /usr/local/lib/package.json
+6 silly cache add args [ 'handlebars', null ]
+7 verbose cache add spec handlebars
+8 silly cache add parsed spec Result {
+8 silly cache add   raw: 'handlebars',
+8 silly cache add   scope: null,
+8 silly cache add   name: 'handlebars',
+8 silly cache add   rawSpec: '',
+8 silly cache add   spec: 'latest',
+8 silly cache add   type: 'tag' }
+9 silly addNamed handlebars@latest
+10 verbose addNamed "latest" is being treated as a dist-tag for handlebars
+11 info addNameTag [ 'handlebars', 'latest' ]
+12 silly mapToRegistry name handlebars
+13 silly mapToRegistry using default registry
+14 silly mapToRegistry registry https://registry.npmjs.org/
+15 silly mapToRegistry uri https://registry.npmjs.org/handlebars
+16 verbose addNameTag registry:https://registry.npmjs.org/handlebars not in flight; fetching
+17 verbose request uri https://registry.npmjs.org/handlebars
+18 verbose request no auth needed
+19 info attempt registry request try #1 at 10:19:45 AM
+20 verbose request id b10848b8ba2d92d5
+21 verbose etag "ESDGKJNTKBB6MMYNHV006IQNU"
+22 http request GET https://registry.npmjs.org/handlebars
+23 http 304 https://registry.npmjs.org/handlebars
+24 verbose headers { date: 'Thu, 14 Apr 2016 14:19:44 GMT',
+24 verbose headers   via: '1.1 varnish',
+24 verbose headers   'cache-control': 'max-age=300',
+24 verbose headers   etag: '"ESDGKJNTKBB6MMYNHV006IQNU"',
+24 verbose headers   age: '41',
+24 verbose headers   connection: 'keep-alive',
+24 verbose headers   'x-served-by': 'cache-jfk1024-JFK',
+24 verbose headers   'x-cache': 'HIT',
+24 verbose headers   'x-cache-hits': '1',
+24 verbose headers   'x-timer': 'S1460643584.928625,VS0,VE0',
+24 verbose headers   vary: 'Accept-Encoding' }
+25 silly get cb [ 304,
+25 silly get   { date: 'Thu, 14 Apr 2016 14:19:44 GMT',
+25 silly get     via: '1.1 varnish',
+25 silly get     'cache-control': 'max-age=300',
+25 silly get     etag: '"ESDGKJNTKBB6MMYNHV006IQNU"',
+25 silly get     age: '41',
+25 silly get     connection: 'keep-alive',
+25 silly get     'x-served-by': 'cache-jfk1024-JFK',
+25 silly get     'x-cache': 'HIT',
+25 silly get     'x-cache-hits': '1',
+25 silly get     'x-timer': 'S1460643584.928625,VS0,VE0',
+25 silly get     vary: 'Accept-Encoding' } ]
+26 verbose etag https://registry.npmjs.org/handlebars from cache
+27 verbose get saving handlebars to /Users/steph/.npm/registry.npmjs.org/handlebars/.cache.json
+28 silly addNameTag next cb for handlebars with tag latest
+29 silly addNamed handlebars@4.0.5
+30 verbose addNamed "4.0.5" is a plain semver version for handlebars
+31 silly cache afterAdd handlebars@4.0.5
+32 verbose afterAdd /Users/steph/.npm/handlebars/4.0.5/package/package.json not in flight; writing
+33 verbose afterAdd /Users/steph/.npm/handlebars/4.0.5/package/package.json written
+34 silly install resolved [ { name: 'handlebars',
+34 silly install resolved     barename: 'handlebars',
+34 silly install resolved     version: '4.0.5',
+34 silly install resolved     description: 'Handlebars provides the power necessary to let you build semantic templates effectively with no frustration',
+34 silly install resolved     homepage: 'http://www.handlebarsjs.com/',
+34 silly install resolved     keywords: [ 'handlebars', 'mustache', 'template', 'html' ],
+34 silly install resolved     repository:
+34 silly install resolved      { type: 'git',
+34 silly install resolved        url: 'git+https://github.com/wycats/handlebars.js.git' },
+34 silly install resolved     author: { name: 'Yehuda Katz' },
+34 silly install resolved     license: 'MIT',
+34 silly install resolved     engines: { node: '>=0.4.7' },
+34 silly install resolved     dependencies:
+34 silly install resolved      { async: '^1.4.0',
+34 silly install resolved        optimist: '^0.6.1',
+34 silly install resolved        'source-map': '^0.4.4',
+34 silly install resolved        'uglify-js': '^2.6' },
+34 silly install resolved     optionalDependencies: { 'uglify-js': '^2.6' },
+34 silly install resolved     devDependencies:
+34 silly install resolved      { 'aws-sdk': '^2.1.49',
+34 silly install resolved        'babel-loader': '^5.0.0',
+34 silly install resolved        'babel-runtime': '^5.1.10',
+34 silly install resolved        benchmark: '~1.0',
+34 silly install resolved        'dustjs-linkedin': '^2.0.2',
+34 silly install resolved        eco: '~1.1.0-rc-3',
+34 silly install resolved        grunt: '~0.4.1',
+34 silly install resolved        'grunt-babel': '^5.0.0',
+34 silly install resolved        'grunt-cli': '~0.1.10',
+34 silly install resolved        'grunt-contrib-clean': '0.x',
+34 silly install resolved        'grunt-contrib-concat': '0.x',
+34 silly install resolved        'grunt-contrib-connect': '0.x',
+34 silly install resolved        'grunt-contrib-copy': '0.x',
+34 silly install resolved        'grunt-contrib-requirejs': '0.x',
+34 silly install resolved        'grunt-contrib-uglify': '0.x',
+34 silly install resolved        'grunt-contrib-watch': '0.x',
+34 silly install resolved        'grunt-eslint': '^17.1.0',
+34 silly install resolved        'grunt-saucelabs': '8.x',
+34 silly install resolved        'grunt-webpack': '^1.0.8',
+34 silly install resolved        istanbul: '^0.3.0',
+34 silly install resolved        jison: '~0.3.0',
+34 silly install resolved        mocha: '~1.20.0',
+34 silly install resolved        'mock-stdin': '^0.3.0',
+34 silly install resolved        mustache: '^2.1.3',
+34 silly install resolved        semver: '^5.0.1',
+34 silly install resolved        underscore: '^1.5.1',
+34 silly install resolved        webpack: '^1.12.6',
+34 silly install resolved        'webpack-dev-server': '^1.12.1' },
+34 silly install resolved     main: 'lib/index.js',
+34 silly install resolved     bin: { handlebars: 'bin/handlebars' },
+34 silly install resolved     scripts: { test: 'grunt' },
+34 silly install resolved     jspm:
+34 silly install resolved      { main: 'handlebars',
+34 silly install resolved        directories: [Object],
+34 silly install resolved        buildConfig: [Object] },
+34 silly install resolved     gitHead: '205c61cfb1acdb599bbdfcf2d356641254e09e5c',
+34 silly install resolved     bugs: { url: 'https://github.com/wycats/handlebars.js/issues' },
+34 silly install resolved     _id: 'handlebars@4.0.5',
+34 silly install resolved     _shasum: '92c6ed6bb164110c50d4d8d0fbddc70806c6f8e7',
+34 silly install resolved     _from: 'handlebars@latest',
+34 silly install resolved     _npmVersion: '3.3.8',
+34 silly install resolved     _nodeVersion: '4.2.1',
+34 silly install resolved     _npmUser: { name: 'kpdecker', email: 'kpdecker@gmail.com' },
+34 silly install resolved     dist:
+34 silly install resolved      { shasum: '92c6ed6bb164110c50d4d8d0fbddc70806c6f8e7',
+34 silly install resolved        tarball: 'https://registry.npmjs.org/handlebars/-/handlebars-4.0.5.tgz' },
+34 silly install resolved     maintainers: [ [Object] ],
+34 silly install resolved     directories: {},
+34 silly install resolved     _resolved: 'https://registry.npmjs.org/handlebars/-/handlebars-4.0.5.tgz',
+34 silly install resolved     readme: 'ERROR: No README data found!' } ]
+35 info install handlebars@4.0.5 into /usr/local/lib
+36 info installOne handlebars@4.0.5
+37 verbose installOne of handlebars to /usr/local/lib not in flight; installing
+38 verbose lock using /Users/steph/.npm/_locks/handlebars-7aff9bd5423d3e89.lock for /usr/local/lib/node_modules/handlebars
+39 silly install write writing handlebars 4.0.5 to /usr/local/lib/node_modules/handlebars
+40 verbose unbuild lib/node_modules/handlebars
+41 silly gentlyRm /usr/local/lib/node_modules/handlebars is being purged from base /usr/local
+42 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/handlebars
+43 verbose tar unpack /Users/steph/.npm/handlebars/4.0.5/package.tgz
+44 verbose tar unpacking to /usr/local/lib/node_modules/handlebars
+45 silly gentlyRm /usr/local/lib/node_modules/handlebars is being purged
+46 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/handlebars
+47 silly gunzTarPerm modes [ '755', '644' ]
+48 error tar.unpack untar error /Users/steph/.npm/handlebars/4.0.5/package.tgz
+49 verbose unlock done using /Users/steph/.npm/_locks/handlebars-7aff9bd5423d3e89.lock for /usr/local/lib/node_modules/handlebars
+50 verbose fstream_path /usr/local/lib/node_modules/handlebars
+51 verbose fstream_type Directory
+52 verbose fstream_class DirWriter
+53 verbose stack Error: EACCES: permission denied, mkdir '/usr/local/lib/node_modules/handlebars'
+53 verbose stack     at Error (native)
+54 verbose fstream_stack /usr/local/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:35:25
+54 verbose fstream_stack /usr/local/lib/node_modules/npm/node_modules/mkdirp/index.js:47:53
+54 verbose fstream_stack FSReqWrap.oncomplete (fs.js:82:15)
+55 verbose cwd /Users/steph/Documents/Goucher/WebDev/WD-670-Git/Week 8/project
+56 error Darwin 15.3.0
+57 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "install" "handlebars" "-g"
+58 error node v4.3.1
+59 error npm  v2.14.12
+60 error path /usr/local/lib/node_modules/handlebars
+61 error code EACCES
+62 error errno -13
+63 error syscall mkdir
+64 error Error: EACCES: permission denied, mkdir '/usr/local/lib/node_modules/handlebars'
+64 error     at Error (native)
+64 error  { [Error: EACCES: permission denied, mkdir '/usr/local/lib/node_modules/handlebars']
+64 error   errno: -13,
+64 error   code: 'EACCES',
+64 error   syscall: 'mkdir',
+64 error   path: '/usr/local/lib/node_modules/handlebars',
+64 error   fstream_type: 'Directory',
+64 error   fstream_path: '/usr/local/lib/node_modules/handlebars',
+64 error   fstream_class: 'DirWriter',
+64 error   fstream_stack:
+64 error    [ '/usr/local/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:35:25',
+64 error      '/usr/local/lib/node_modules/npm/node_modules/mkdirp/index.js:47:53',
+64 error      'FSReqWrap.oncomplete (fs.js:82:15)' ] }
+65 error Please try running this command again as root/Administrator.
+66 verbose exit [ -13, true ]
+67 verbose unbuild lib/node_modules/handlebars
+68 silly gentlyRm /usr/local/lib/node_modules/handlebars is being purged from base /usr/local
+69 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/handlebars

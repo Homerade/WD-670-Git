@@ -50,7 +50,7 @@ app.get("/",function(req,res){
 	app.get("/appts",function(req,res){
 		var data = {
 			title: "Appointments",
-			content: "Appointments are made on an idividual basis. Check availability ad make an appointment via the calendar below or contact us to connect with a real person."
+			content: "Appointments are made on an individual basis. Check availability via the calendar below, fill in the form and submit! or contact us to connect with a real person."
 		};
 		res.render("default",data);	
 	});		

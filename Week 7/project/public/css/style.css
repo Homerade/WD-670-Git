@@ -91,3 +91,23 @@ a:visited{
 	width: 1200px;
 	text-align: center;	
 }
+
+.lineItem{
+	margin: 2em 1em;
+	border:1px solid #fff;
+}
+
+label{
+	font-weight: bold;
+	font-family: sans-serif;
+	display: block;
+	float: left;
+	width: 10em;
+	clear:left;	
+}
+
+.field .notesField{
+	display: block;
+	float: left;
+	clear: right;
+}

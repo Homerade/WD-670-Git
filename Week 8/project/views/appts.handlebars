@@ -1,0 +1,49 @@
+<div class= 'page'>
+
+	<p class='title'>{{title}}</p>
+	<p>{{blurb}}</p>
+
+	<form method='post' action='/appts'>
+
+		<div class='lineItem'>
+			<label>Name</label>
+			<div class='field'><input type='text' name='name' class='data'/></div>
+		</div>
+
+		</br>
+
+		<div class='lineItem'>
+			<label>Date (MM/DD/YY)</label>
+			<div class='field'><input type='text' name='date' class='data'/></div>
+		</div>
+
+		</br>
+
+		<div class='lineItem'>
+			<label>Time (H:MMam/pm)</label>
+			<div class='field'><input type='text' name='time' class='data'/></div>
+		</div>
+
+		</br>
+
+		<div class='lineItem'>
+			<label>Description</label>
+			<div class='descriptField'><input type='text' name='descript' class='data'/></div>
+		</div>	
+
+		</br>
+
+		<input type='submit' class='button'/>
+	
+	</form>
+		
+		
+	<p>Or <a href='/contact' id='contactLink'>contact</a> us to connect with a real person.</p>
+</div>	
+
+
+// All classes (& other elements?) must be styled
+// 'notesField' is bigger than 'field'
+// line 14 date: text input or date formatting?
+// add calendar
+// 'time' should be a dropdown
