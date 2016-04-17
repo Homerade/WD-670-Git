@@ -1,7 +1,7 @@
 html,body{
 	margin: 0;
 	background-color: #fff2f4;	
-	font-family: 'penna';
+	font-family: 'clicker script';
 }
 
 header{
@@ -12,7 +12,7 @@ header{
 
 header p{
 	text-align: center;
-	font-family: 'penna';
+	font-family: 'clicker script';
 	font-size: 100px;
 	margin: 0;
 	position: relative;
@@ -21,8 +21,10 @@ header p{
 
 #est{
 	margin: 15px;
-	font-size: 40px;
-	font-family: 'penna';
+	margin-top: 5px;
+	/*font-size: 40px;*/
+	font-size: 25px;
+	font-family: 'clicker script';
 	position: relative;
 	z-index: 99;
 }
@@ -61,16 +63,21 @@ hr{
 
 .page a{
 	text-decoration: none;
+	color: black;
+}
+
+a:visited{
+	color: black;
 }
 
 .title{
 	font-size: 40px;
-	font-family: 'penna';
+	font-family: 'clicker script';
 }
 
 .cat1{
 	font-size: 30px;
-	font-family: 'penna';
+	font-family: 'clicker script';
 }
 
 p {
@@ -79,14 +86,6 @@ p {
 	font-family: 'work sans';
 	font-weight: 200;
 }	
-
-a{
-	color: black;
-}
-
-a:visited{
-	color: black;
-}
 
 .cats{
 	width: 1200px;
@@ -103,7 +102,7 @@ label{
 	font-weight: 200;
 	display: block;
 	float: left;
-	width: 10em;
+	width: 100em;
 	clear:left;	
 }
 
@@ -121,6 +120,27 @@ label{
 	clear:both;
 }
 
-a {
-	text-decoration: underline black;
+.regButton{
+	display: block;
+	margin-bottom: 0;
+	clear:both;
+}
+
+/* can't get this link to have an underline */
+.pageLink a{
+	/*text-decoration: underline grey;*/
+	color: black;
+	font-weight: 400;
+}
+
+.navBlurbs{
+	clear: both;
+	font-size: 13px;
+	font-family: 'work sans';
+	font-weight: 200;
+}
+
+.navBlurbs a{
+	color: black;
+	font-weight: 400;
 }

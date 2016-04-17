@@ -1,0 +1,29 @@
+<div class= 'page'>
+
+	<p class='title'>Earnings for {{date}}</p>
+	
+	{{#if error}}
+
+	<h2>Error</h2>
+	<p>{{message}}</p>
+	<p><a href="/">Try Again</a></p>
+	
+{{else}}
+
+	<p>
+		A <b>{{tipPercent}}%</b> tip on a <b>${{origTotal}}</b> check comes to <b>${{tipAmount}}</b>.
+    </p>
+	
+	<p>Your total with tip is:</p>
+
+	<h1 class="tip">${{newTotal}}</h1>
+
+	<p><a href="/">Calculate Another</a></p>
+
+{{/if}}
+
+	</br>
+
+	<p class='navBlurbs'>Return to <a href='/appts'>previous page</a> or the <a href='/'>homepage</a>.</p>
+
+</div>	

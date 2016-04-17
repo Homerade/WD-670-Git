@@ -10,6 +10,12 @@ app.set('view engine', 'handlebars');
 // establish "public directory" in express
 app.use(express.static('public'));
 
+//body parser
+app.use(require('body-parser').urlencoded({extended:true}));
+
+//file system
+var fs = require('fs');
+
 // --- routes --- //
 app.get("/",function(req,res){
 	var data = {
@@ -50,10 +56,64 @@ app.get("/",function(req,res){
 	app.get("/appts",function(req,res){
 		var data = {
 			title: "Appointments",
-			blurb: "Appointments are made on an individual basis. Check availability via the calendar below, fill out your information in the fields below and submit!"
+			blurb: "Appointments are made on an individual basis. Fill in the fields below with your information and submit!"
 		};
 		res.render("appts",data);	
-	});		
+	});	
+
+//creating a page after submit
+
+	app.post('/new',function(req,res){
+		
+		//STEP 1
+		var appt = {};
+
+		appt.name = req.body.name;
+		appt.email = req.body.email;
+		appt.phone = req.body.phone;
+		appt.date = req.body.date;
+		appt.time = req.body.time;
+		appt.descript = req.body.descript;
+
+		//STEP 2
+		var file = fs.readFileSync('records/appts.json', 'utf8');
+		var jsonObject = JSON.parse(file);
+
+		//STEP 3
+		jsonObject.apptsReceived.push(appt);
+
+		//STEP 4
+		fs.writeFileSync('records/appts.json',JSON.stringify(jsonObject));
+
+		//STEP 5
+		res.render('apptThankYou',{name:req.body.name});
+
+	});	
+
+	app.get('/calc',function(req,res){	
+		var data = {
+			title: "Wage Calculator"
+		}
+	res.render('calc',data);	
+	});	
+
+	app.post('/input',function(req,res){
+		 var totalCC = Number(req.body.ccTotal);
+		 var totalCash = Number(req.body.cashTotal);
+		 var cashDue = Number(req.body.cashDue);
+		 var tipout = Number(req.body.tipout);
+
+		 var totalTips = (totalCash - cashDue) + totalCC;
+		 var tipoutPC = (tipout / (totalCash + totalCC)) * 100;
+
+		 var data = {
+		 	totalTips : totalTips,
+		 	tipoutPC : tipoutPC
+		 }
+
+		 res.render('wages',data,{date:req.body.date},{sales:req.body.sales});
+		 res.render('wages',data);
+	});
 
 
 // services and rates page
