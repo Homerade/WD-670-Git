@@ -1,0 +1,14 @@
+<h1>Products<h1>
+{{#each products}}
+	<p class='details'>{{name}}</p>
+	<p class='details'>{{price}}</p>
+	<p class='details'>{{description}}</p>
+	<p class='details' class='hidden'>{{inventory}}</p>
+	<p class='details' class='hidden'>{{available}}</p>
+
+	<form method="post" action='/post'>
+		<p class='detail'>qualtity: <input type='number' name'quantity'/></p>
+		<button name='addCart' value='value' type='submit'>Add to Cart</button>
+	</form>
+
+{{/each}}

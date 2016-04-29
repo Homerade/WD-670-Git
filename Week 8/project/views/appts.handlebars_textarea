@@ -1,0 +1,56 @@
+<div class= 'page'>
+
+	<p class='title'>{{title}}</p>
+	<p>{{blurb}}</p>
+
+	<form method='post' action='/new'>
+
+		<div class='lineItem'>
+			<label>Name</label>
+			<div class='field'><input type='text' name='name' class='data'/></div>
+		</div>
+
+		</br>
+
+		<div class='lineItem'>
+			<label>Email</label>
+			<div class='field'><input type='text' name='email' class='data'/></div>
+		</div>
+
+		</br>
+
+		<div class='lineItem'>
+			<label>Phone</label>
+			<div class='field'><input type='text' name='phone' class='data'/></div>
+		</div>
+
+		</br>
+
+		<div class='lineItem'>
+			<label>Date</label>
+			<div class='field'><input type='date' name='date' class='data'/></div>
+		</div>
+
+		</br>
+
+		<div class='lineItem'>
+			<label>Time</label>
+			<div class='field'><input type='time' name='time' class='data'/></div>
+		</div>
+
+		</br>
+
+		<div class='lineItem'>
+			<label>Description</label>
+			<div class='descriptField'><textarea name='descript' class='data'></textarea>
+		</div>	
+
+		</br>
+
+		<input type='submit' class='button'/>
+	
+	</form>
+		
+	<p class='pageLink'>Or <a href='/contact'>contact us</a> to connect with a real person.</p>
+
+</div>		

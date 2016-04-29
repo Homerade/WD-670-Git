@@ -111,7 +111,10 @@ app.get("/",function(req,res){
 		 	tipoutPC : tipoutPC
 		 }
 
-		 res.render('wages',data,{date:req.body.date},{sales:req.body.sales});
+		 // The best of my attempts at putting some of the 
+		 // form information on the resulting wages page:
+		 
+		 // res.render('wages',data,{date:req.body.date},{sales:req.body.sales});
 		 res.render('wages',data);
 	});
 
