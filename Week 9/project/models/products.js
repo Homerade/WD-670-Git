@@ -1,9 +1,8 @@
 var mongoose = require('mongoose');
 
-var productSchema = mongoose.schema ({
+var productSchema = mongoose.Schema ({
 	name: String,
 	price: Number,
-	unit: String,
 	description: String,
 	inventory: Number, //hidden
 	available: Boolean, //in the future attach to inventory: 0=false, allElse=true

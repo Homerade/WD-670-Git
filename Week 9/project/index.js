@@ -24,42 +24,40 @@ var mongoose = require('mongoose');
 mongoose.connect(credentials.mongo); // or 'mongodb://localhost/adrastea' ?
 
 //model
-var Product = require('./models/product.js')
-
-//file system
+var Products = require('./models/products.js');
 
 
 //routes
 app.get('/', function(req, res){
-	Products.find({available:true}, function(err,product){
+	Products.find({available:true}, function(err,products){
 		var data ={
-			products: products.map(function(vacation){
+			products: products.map(function(products){
 				return {
 					name: product.name,
 					price: product.price,
 					description: product.description
-				}
+				};
 			})
 		};
-		res.render('products' data);
+		res.render('products', data);
 
 	});
 });
 
-var Bought = require('./models/bought.js');
+// var Bought = require('./models/bought.js');
 
-app.post('/post', function(req, res){
-	Bought.update(
-		{$push: {name: req.body.name}, {price: req.body.price}, {quantity: req.body.quantity}},
-		{upsert: true},
-		function(err){
-			if(err) {
-				console.log(err);
-				res.render('500');
-			};
+// app.post('/post', function(req, res){
+// 	Bought.update(
+// 		{$push: {name: req.body.name}, {price: req.body.price}, {quantity: req.body.quantity}},
+// 		{upsert: true},
+// 		function(err){
+// 			if(err) {
+// 				console.log(err);
+// 				res.render('500');
+// 			};
 
-	});
-});		
+// 	});
+// });		
 		
 
 // 404
