@@ -26,6 +26,18 @@ mongoose.connect(credentials.mongo); // or 'mongodb://localhost/adrastea' ?
 //model
 var Products = require('./models/products.js');
 
+Products.find(function(err, vacations){
+	if(vacations.length) return;
+
+	new Products({
+		name: 'wheat',
+		price: 5,
+		description: 'whole milled wheat',
+		inventory: 50,
+		available: true,
+	}).save();	
+
+});
 
 //routes
 app.get('/', function(req, res){
