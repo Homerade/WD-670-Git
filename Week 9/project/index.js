@@ -26,13 +26,18 @@ mongoose.connect(credentials.mongo); // or 'mongodb://localhost/adrastea' ?
 //model
 var Products = require('./models/products.js');
 
-Products.find(function(err, vacations){
-	if(vacations.length) return;
+Products.find(function(err, products){
+	if(products.length) return;
 
 	new Products({
 		name: 'wheat',
-		price: 5,
+//can't get this price array to work (added "/pound" to text in handlebar)
+		price: { 
+		amount: 5,
+		measurement: '/pound'
+	},
 		description: 'whole milled wheat',
+	
 		inventory: 50,
 		available: true,
 	}).save();	
@@ -45,9 +50,9 @@ app.get('/', function(req, res){
 		var data ={
 			products: products.map(function(products){
 				return {
-					name: product.name,
-					price: product.price,
-					description: product.description
+					name: products.name,
+					price: products.price,
+					description: products.description
 				};
 			})
 		};
@@ -56,20 +61,32 @@ app.get('/', function(req, res){
 	});
 });
 
-// var Bought = require('./models/bought.js');
+var Cart = require('./models/cart.js');
 
-// app.post('/post', function(req, res){
-// 	Bought.update(
-// 		{$push: {name: req.body.name}, {price: req.body.price}, {quantity: req.body.quantity}},
-// 		{upsert: true},
-// 		function(err){
-// 			if(err) {
-// 				console.log(err);
-// 				res.render('500');
-// 			};
+app.post('/post', function(req, res){
+	Cart.update(
+		{name: req.body.name}, 
+		{price: req.body.price}, 
+		{$push: {quantity: req.body.quantity}},
+		{upsert: true},
+		function(err){
+			if(err) {
+				console.log(err);
+				res.render('500');
+			}
 
-// 	});
-// });		
+		var data = {
+			cart: cart.map(function(cart){
+				return {
+					name: cart.name,
+					price: cart.price,
+					quantity: cart.quantity
+				};
+			})
+		};
+			res.redirect('cart', data);
+	});
+});		
 		
 
 // 404
