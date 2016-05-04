@@ -64,29 +64,40 @@ app.get('/', function(req, res){
 var Cart = require('./models/cart.js');
 
 app.post('/post', function(req, res){
-	Cart.update(
-		{name: req.body.name}, 
-		{price: req.body.price}, 
-		{$push: {quantity: req.body.quantity}},
-		{upsert: true},
-		function(err){
-			if(err) {
-				console.log(err);
-				res.render('500');
-			}
-
-		var data = {
-			cart: cart.map(function(cart){
-				return {
-					name: cart.name,
-					price: cart.price,
-					quantity: cart.quantity
-				};
-			})
-		};
-			res.redirect('cart', data);
+	new Cart({
+		name: products.name,
+		price: products.price,
+		quantity: products.quantity,
+		datetime: req.body.datetime
+	}).save(function(err){
+		if (err){console.log(err);}
+		res.redirect('/');
 	});
-});		
+});	
+
+// 	Cart.update(
+// 		{name: req.body.name}, 
+// 		{price: req.body.price}, 
+// 		{$push: {quantity: req.body.quantity}},
+// 		{upsert: true},
+// 		function(err){
+// 			if(err) {
+// 				console.log(err);
+// 				res.render('500');
+// 			}
+
+// 		var data = {
+// 			cart: cart.map(function(cart){
+// 				return {
+// 					name: cart.name,
+// 					price: cart.price,
+// 					quantity: cart.quantity
+// 				};
+// 			})
+// 		};
+// 			res.redirect('/', data);
+// 	});
+// });		
 		
 
 // 404

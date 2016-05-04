@@ -1,11 +1,12 @@
 var mongoose = require('mongoose');
 
 var cartSchema = mongoose.Schema ({
-	name: String,
-	price: {
-		amount: Number,
-		measurement: String
+	datetime: {
+		type:Date,
+		default:Date.now
 	},
+	name: String,
+	price: Number,
 	quantity: Number,
 	inventory: Number, 
 	available: Boolean, 
@@ -13,3 +14,8 @@ var cartSchema = mongoose.Schema ({
 
 var Cart = mongoose.model('Cart', cartSchema);
 module.exports = Cart;
+
+//price: {
+//		amount: Number,
+//		measurement: String
+//	},
