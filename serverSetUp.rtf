@@ -56,21 +56,45 @@ install handlebars\
 in terminal, base location, login to server using \'91ssh root@\'91\
 	
 \f1 ~ steph$ ssh root@104.131.84.51\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
 
-\f0\b \
+\f0\b \cf0 \
 run files on server:\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
 
-\b0 navigate to project folder (on cyberduck that you\'92ve already uploaded)\
-node enable the server to run those project files\
-
-\f1 	~/week8-forms/project# node app.js\
-
-\f0 press ctrl-c to terminate or close terminal\
+\b0 \cf0 navigate to project folder (on cyberduck that you\'92ve already uploaded)\
+node enable the server to run those project files by navigating to correct location\
+	\
+	~# 
+\f1 cd week8-forms/project
+\f0 \
 \
+then node run the js file\
 
-\b run files forever on server:\
+\f1 	\
+	~/week8-forms/project# node [filename].js\
 
-\b0 \
+\f0 \
+press ctrl-c to terminate or close terminal\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\b \cf0 run files forever on server:\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\b0 \cf0 instead of 
+\f1 \'92node [filename].js\'92
+\f0  run:\
+	\
+	
+\f1 forever start [filename].js
+\f0 \
+\
+to stop (from same location)\
+\
+	
+\f1 forever stop [filename].js
+\f0 \
 	\
 \
 \

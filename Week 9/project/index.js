@@ -65,15 +65,15 @@ var Cart = require('./models/cart.js');
 
 app.post('/post', function(req, res){
 	new Cart({
-		name: products.name,
-		price: products.price,
-		quantity: products.quantity,
+		name: req.body.itemName,
+		price: req.body.price,
+		quantity: req.body.quantity,
 		datetime: req.body.datetime
 	}).save(function(err){
 		if (err){console.log(err);}
 		res.redirect('/');
 	});
-});	
+});
 
 // 	Cart.update(
 // 		{name: req.body.name}, 

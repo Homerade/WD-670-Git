@@ -4,18 +4,20 @@
 
 <div id='prodGrid'>
 
+<form method="post" action='/post'>
+
 {{#each products}}
-	<p class='details'>{{name}}</p>
-	<p class='details'>${{price}}.00/pound</p>
-	<p class='details'>{{description}}</p>
-	<p class='details' class='hidden'>{{inventory}}</p>
-	<p class='details' class='hidden'>{{available}}</p>
-
-	<form method="post" action='/post'>
-		<p class='detail'>quantity: <input type='number' name'quantity'/></p>
-		<button name='addCart' value='value' type='submit'>Add to Cart</button>
-	</form>
-
+	<p>{{name}}</p>
+	<p>${{price}}.00/pound</p>
+	<p>{{description}}</p>
+	<p>{{inventory}}</p>
+	<p>{{available}}</p>
 {{/each}}
+
+	<input type='hidden' name='itemName' value='{{name}}'/>
+	<p>quantity: <input type='number' name='quantity'/></p>
+	<button name='addCart' value='value' type='submit'>Add to Cart</button>
+
+</form>
 
 </div>

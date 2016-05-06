@@ -5,6 +5,7 @@ var cartSchema = mongoose.Schema ({
 		type:Date,
 		default:Date.now
 	},
+//	Products.findById(req.params.parentId, function (err, doc){
 	name: String,
 	price: Number,
 	quantity: Number,
