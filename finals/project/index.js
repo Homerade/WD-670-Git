@@ -6,7 +6,18 @@ var app = express();
 app.set('port', process.env.PORT || 9000);
 
 //handlebars
-var handlebars = require('express-handlebars').create({ defaultLayout:'main'});
+var handlebars = require('express-handlebars').create({ defaultLayout:'main',
+	helpers: {
+        section: function(name, options){
+            if(!this._sections) this._sections = {};
+            this._sections[name] = options.fn(this);
+            return null;
+        },
+        static: function(name) {
+            return require('./lib/static.js').map(name);
+        }
+    }
+});
 app.engine('handlebars', handlebars.engine);
 app.set('view engine', 'handlebars');
 
@@ -26,29 +37,9 @@ mongoose.connect(credentials.mongo); // or 'mongodb://localhost/adrastea' ?
 //model
 var Products = require('./models/products.js');
 
-Products.find(function(err, products){
-	if(products.length) return;
-
-	new Products({
-		name: 'wheat',
-		price: 5,
-		description: 'whole milled wheat',	
-		inventory: 50,
-		available: true
-	}).save();	
-
-	new Products({
-		name: 'barley',
-		price: 3,
-		description: 'whole barley kernels',
-		inventory: 70,
-		available: true
-	}).save();
-
-});
 
 //routes
-app.get('/', function(req, res){
+app.get('/ourproducts', function(req, res){
 	Products.find({available:true}, function(err,products){
 		var data ={
 			products: products.map(function(products){
@@ -59,7 +50,7 @@ app.get('/', function(req, res){
 				};
 			})
 		};
-		res.render('products', data);
+		res.render('jsproducts', data);
 
 	});
 });
@@ -76,7 +67,7 @@ app.post('/post', function(req, res){
 		datetime: req.body.datetime
 	}).save(function(err){
 		if (err){console.log(err);}
-		res.redirect('/');
+		return res.redirect('thankyou');
 	});
 });
 

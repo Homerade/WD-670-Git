@@ -2,10 +2,7 @@ var mongoose = require('mongoose');
 
 var productSchema = mongoose.Schema ({
 	name: String,
-	price: {
-		amount: Number,
-		measurement: String,
-	},
+	price: Number,
 	description: String,
 	inventory: Number, //hidden
 	available: Boolean, //in the future attach to inventory: 0=false, allElse=true

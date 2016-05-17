@@ -1,0 +1,42 @@
+<!DOCTYPE HTML>
+<html>
+
+ <head>
+ 	<script src="prodListing.js"></script>
+ </head>	
+
+
+<body>
+
+	<h1>Our Products:<h1>
+
+	<h2>handmade grains</h2>
+
+	<div id='prodGrid'>
+
+
+		{{#each products}}
+
+			<div class='item'>
+				<p>{{name}}</p>
+				<p>${{price}}/pound</p>
+				<p>{{description}}</p>
+				<p>{{inventory}}</p>
+				<p>{{available}}</p>
+
+				<form method="post" action='/post'>
+					<input type='hidden' name='itemName' value='{{name}}'/>
+					<input type='hidden' name='itemPrice' value='{{price}}'/>
+					<input type='hidden' name='itemInventory' value='{{inventory}}'/>   
+					<input type='hidden' name='itemAvail' value='{{available}}'/>         
+					<p>quantity: <input type='number' name='quantity'/></p>
+					<button name='addCart' value='value' type='submit'>Add to Cart</button>
+
+				</form>
+			</div>	
+
+		{{/each}}
+		
+	</div>
+
+</body>	
