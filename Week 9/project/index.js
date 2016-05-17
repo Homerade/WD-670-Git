@@ -75,16 +75,19 @@ app.post('/post', function(req, res){
 	});
 });
 
-// 	Cart.update(
-// 		{name: req.body.name}, 
-// 		{price: req.body.price}, 
-// 		{$push: {quantity: req.body.quantity}},
-// 		{upsert: true},
-// 		function(err){
-// 			if(err) {
-// 				console.log(err);
-// 				res.render('500');
-// 			}
+	// Cart.update(
+	// 	{name: req.body.name}, 
+	// 	{price: req.body.price}, 
+	// 	{$push: {quantity: req.body.quantity}},
+	// 	{upsert: true},
+	// 	function(err){
+	// 		if(err) {
+	// 			console.log(err);
+	// 			res.render('500');
+	// 		}
+	// 		res.redirect('/'); //leave out the var = data bc you already have it now
+	// 	}
+	// );		
 
 // 		var data = {
 // 			cart: cart.map(function(cart){

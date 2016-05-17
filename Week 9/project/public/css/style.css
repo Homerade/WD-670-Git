@@ -35,3 +35,7 @@ p{
 #prodGrid{
 	margin: auto 5%;
 }
+
+#prodGrid{
+	float: left;
+}
