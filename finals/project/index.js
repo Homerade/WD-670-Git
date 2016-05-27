@@ -39,6 +39,15 @@ var Products = require('./models/products.js');
 
 
 //routes
+app.get('/', function(req, res){
+	var data = {
+		nav1: 'About', 
+		nav2: 'Products',
+		nav3: 'Contact'
+	};
+	res.render('homepage',data);
+});
+
 app.get('/ourproducts', function(req, res){
 	Products.find({available:true}, function(err,products){
 		var data ={
