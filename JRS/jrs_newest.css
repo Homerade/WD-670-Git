@@ -44,8 +44,8 @@ h1{
 	font-weight: 700;
 	color: white;
 	border: none;
-	border-bottom: 2px solid #00a37a;
-	text-shadow: 0px -1px #333333;
+	/*border-bottom: 2px solid #00a37a;
+	text-shadow: 0px -1px #333333;*/
 	background-color: #00CC99;
 	border-radius: 5px;
 }
@@ -154,7 +154,6 @@ a:link{
 #setAppt{
 	color: #00CC99;
 	text-decoration: none;
-	border-bottom: 4px double;
 }
 
 /*quick fix for gallery link changing color*/
@@ -210,6 +209,10 @@ footer{
 
 #mailing, #inspire{
 	line-height: 91px;
+}
+
+#inspire{
+	padding-right: 60px;
 }
 
 #bgLettering{

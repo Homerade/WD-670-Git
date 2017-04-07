@@ -1,0 +1,292 @@
+html,body{
+		margin: 0;	
+		font-family: 'clicker script';
+	}
+
+	.hidden{
+		display: none;
+	}
+
+	#vid{
+		width: 100%;
+		position: absolute;
+		z-index: 1;
+	}
+
+	#img1{
+		width: 100%;
+		position: absolute;
+		z-index: 1;
+		opacity: 0.8;
+		background: cover;
+	}
+
+	.headWrap{
+		height: 200px;
+		width: 100%;
+		position: relative;
+	}
+
+	#mainBlock{
+		height: 200px;
+		margin-top: -230px;
+		text-align: center;
+		position: relative;
+		z-index: 99;
+		/*background-image: url('img/ornategrey_.jpg');*/
+	}
+
+	#logo{
+		text-align: center;
+		font-family: 'penna-connected';
+		font-size: 100px;
+		margin: 0 auto;
+		margin-top: 0px;
+		position: relative;
+		z-index: 99;
+	}
+
+	.headWrap a{
+		text-decoration: none;
+		color: black;
+	}
+
+	a:visited{
+		color: black;
+	}
+
+	#est{
+		margin: 15px;
+		margin-top: -5px;
+		font-size: 25px;
+		font-family: 'clicker script';
+		position: relative;
+		z-index: 99;
+	}
+
+	.hr{
+		width: 50%;
+		margin-top: -5px;
+		margin-bottom: 20px;
+		border: 0; 
+	  	height: 2px; 
+	  	background-image: -webkit-linear-gradient(left, transparent, #000000, transparent);
+	  	background-image: -moz-linear-gradient(left, transparent, #000000, transparent);
+	  	background-image: -ms-linear-gradient(left, transparent, #000000, transparent);
+	  	background-image: -o-linear-gradient(left, transparent, #000000, transparent); 
+	}
+
+
+	.bgStrip{
+		width: 100%;
+		margin-top: 150px;
+		opacity: 0.4;
+		position: relative;
+		z-index: 1;
+		font-size: 40px;
+	}
+
+	#servsRates{
+		float: left;
+		margin-left: 3%;
+		margin-top: -12%;
+		z-index: 99;
+		position: relative;
+		font-size: 40px;
+	}
+
+	#gallery{
+		float:left;
+		margin-top: -60px;
+		margin-left: 17%;
+		z-index: 99;
+		position: relative;
+		font-size: 40px;
+	}
+
+	#contact{
+		float:left;
+		margin-top: -90px;
+		margin-left: 77%;
+		z-index: 99;
+		position: relative;
+		font-size: 40px;
+	}
+
+	#appts{
+		float:left;
+		margin-top: -15%;
+		margin-left: 81%;
+		z-index: 99;
+		position: relative;
+		font-size: 40px;
+	}
+
+/* -------------------------All subpages-------------------------*/
+	.spHeadWrap{
+		margin-top: 1%;
+	}
+
+	.subpageHead a{
+		text-decoration: none;
+		color: black;
+	}
+
+	.subpageLogo {
+		text-align: center;
+		font-family: 'penna-connected';
+		font-size: 50px;
+		margin: 0 auto;
+		margin-top: 0px;
+		position: relative;
+		z-index: 99;
+	}
+
+	.subpageHr{
+		width: 25%;
+		margin-top: -5px;
+		margin-bottom: 20px;
+		border: 0; 
+	  	height: 1px; 
+	  	background-image: -webkit-linear-gradient(left, transparent, #000000, transparent);
+	  	background-image: -moz-linear-gradient(left, transparent, #000000, transparent);
+	  	background-image: -ms-linear-gradient(left, transparent, #000000, transparent);
+	  	background-image: -o-linear-gradient(left, transparent, #000000, transparent); 	
+	}
+
+	.subpageEst{
+		text-align: center;
+		margin: 15px;
+		margin-top: -15px;
+		font-size: 15px;
+		font-family: 'clicker script';
+		position: relative;
+		z-index: 99;
+	}
+
+/* -------------------------servsRates.html-------------------------*/
+	#SRbg{
+		width: 100%;
+		opacity: .5;
+		margin-top: -30px;
+		position: absolute;
+		z-index: -1;
+	}
+
+	.bgFull{
+		width: 100%;
+		opacity: .6;
+		position: relative;
+		z-index: 1;
+		margin-top: -30px;
+	}
+
+	#head{
+		height: 200px;
+		margin-top: 30px;
+		text-align: center;
+		position: relative;
+		z-index: 99;
+	}
+
+	#head a{
+		text-decoration: none;
+		color: black;
+	}
+
+	.page{
+		width: 100%;
+		text-align: center;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.title{
+		font-size: 40px;
+		color: black;
+		z-index: 99;
+		position: relative;
+		margin-top: 0;
+		margin-left: 5%;
+	}
+
+	.services{
+		width: 25%;
+		position: relative;
+		float: left;
+		padding: 0 5%;
+	}
+
+	.cat1{
+		font-size: 35px;
+		font-family: 'clicker script';
+		position: relative;
+		z-index: 99;
+		margin: 5%;
+		display: inline-block;
+	}
+
+	.catDescript{
+		font-size: 25px;
+		font-family: 'clicker script';
+		position: relative;
+		z-index: 99;
+		margin: 5% 10%;
+		padding: 0;
+	}
+
+	.cats{
+		width: 100%;
+		display: flex;
+    	justify-content: center;
+    	align-items: center;
+    	margin-top: 10%;
+	}
+
+	#middle{
+		border: solid black;
+		border-width: 0 1px;
+
+	}
+
+/* -------------------------gallery.html-------------------------*/
+
+	.photoBox{
+		width: 100%;
+		margin: 65px;
+		padding: 0;
+		position: relative;
+		z-index: 99;
+	}
+
+	#galleryImg1{
+		width: 40%;
+		margin: -100px 0 0 -50px;
+		padding: 0;
+		position: absolute;
+		z-index: 1;
+	}
+
+	#galleryImg2{
+		width: 40%;
+		margin: 30% 0 0 70%;
+		padding: 0;
+		position: absolute;
+	}
+
+	#galleryImg3{
+		width: 50%;
+		/*margin: 110% 0 0 -20%;*/
+		margin: 90% 0 0 40%;
+		padding: 0;
+		position: absolute;
+	}
+
+	.images{
+		margin: 15px 15px;
+		width: 200px;
+		border: solid white;
+		border-width: 2px;
+		border-blend-mode: overlay;
+		list-style-type: none;
+	}
