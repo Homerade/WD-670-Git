@@ -29,6 +29,7 @@ html,body{
 
 	#mainBlock{
 		height: 200px;
+		/*TO REMOVE BG STRIP, comment out next line:*/
 		margin-top: -230px;
 		text-align: center;
 		position: relative;
